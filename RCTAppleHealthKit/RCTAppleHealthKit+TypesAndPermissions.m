@@ -264,6 +264,13 @@
         return [RCTAppleHealthKit clinicalTypeFromName:@"VitalSignRecord"];
     }
 
+    // Menstruation
+    if (@available(iOS 9.0, *)) {
+        if([@"MenstrualFlow" isEqualToString: key]) {
+            return [HKObjectType categoryTypeForIdentifier:HKCategoryTypeIdentifierMenstrualFlow];
+        }
+    }
+
     return nil;
 }
 

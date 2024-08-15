@@ -629,4 +629,17 @@ NSString * const kMetadataKey = @"metadata";
     }
 }
 
++ (NSString *)stringFromMenstrualFlowValue:(HKCategoryValueMenstrualFlow)value {
+    switch (value) {
+        case HKCategoryValueMenstrualFlowLight:
+            return @"Light";
+        case HKCategoryValueMenstrualFlowMedium:
+            return @"Medium";
+        case HKCategoryValueMenstrualFlowHeavy:
+            return @"Heavy";
+        default:
+            return @"NotDetermined";
+    }
+}
+
 @end

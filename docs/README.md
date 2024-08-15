@@ -123,3 +123,7 @@
 
 - [getAnchoredWorkouts](getAnchoredWorkouts.md)
 - [saveWorkout](saveWorkout.md)
+
+### Cycle Tracking Methods
+
+- [getMenstruationDays](/docs/getMenstruationDays.md)

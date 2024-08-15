@@ -99,4 +99,5 @@ export const Permissions = {
   RunningStrideLength: 'RunningStrideLength',
   RunningVerticalOscillation: 'RunningVerticalOscillation',
   RunningGroundContactTime: 'RunningGroundContactTime',
+  MenstrualFlow: 'MenstrualFlow',
 }
