@@ -122,6 +122,10 @@
 * [getSamples](docs/getSamples.md)
 * [saveWorkout](/docs/saveWorkout.md)
 
+## Cycle Tracking Methods
+
+* [getMenstruationDays](/docs/getMenstruationDays.md)
+
 ## Contributing
 
 * [Contributing](CONTRIBUTING.md)
