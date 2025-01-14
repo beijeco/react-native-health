@@ -462,6 +462,10 @@ declare module 'react-native-health' {
       callback: (error: string, result: HealthValue) => void,
     ): void
 
+    getMenstruationDays(
+      options: HealthInputOptions,
+      callback: (error: string, result: Array<MenstrualFlowValue>) => void,
+    ): void
 
     Constants: Constants
   }
@@ -546,7 +550,7 @@ declare module 'react-native-health' {
     PausedOrResumeRequest = 'pause or resume request',
     Lap = 'lap',
     Segment = 'segment',
-    Marker = 'marker'
+    Marker = 'marker',
   }
 
   export type HKWorkoutEventType = {
@@ -631,6 +635,10 @@ declare module 'react-native-health' {
     sourceId: string
     displayName: string
     fhirData: any
+  }
+
+  export interface MenstrualFlowValue extends BaseValue {
+    intensity: MenstruationIntensity
   }
 
   /* Health Constants */
@@ -812,6 +820,7 @@ declare module 'react-native-health' {
     RunningStrideLength = 'RunningStrideLength',
     RunningVerticalOscillation = 'RunningVerticalOscillation',
     RunningGroundContactTime = 'RunningGroundContactTime',
+    MenstrualFlow = 'MenstrualFlow',
   }
 
   export enum HealthUnit {
@@ -899,6 +908,13 @@ declare module 'react-native-health' {
   export enum InsulinDeliveryReason {
     Basal = 1,
     Bolus = 2,
+  }
+
+  export enum MenstruationIntensity {
+    NotDetermined = 'NotDetermined',
+    Light = 'Light',
+    Medium = 'Medium',
+    Heavy = 'Heavy',
   }
 
   const appleHealthKit: AppleHealthKit

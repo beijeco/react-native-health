@@ -288,6 +288,10 @@ All the documentation is under the [docs](/docs) folder. They are split into the
 - [saveWorkout](/docs/saveWorkout.md)
 - [getWorkoutRouteSamples](/docs/getWorkoutRouteSamples.md)
 
+### Cycle Tracking Methods
+
+- [getMenstruationDays](/docs/getMenstruationDays.md)
+
 ## Additional Information
 
 ### Permissions
